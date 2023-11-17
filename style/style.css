@@ -316,7 +316,7 @@ footer .socials svg:hover path {
   .head-section .wrapper {
     width: 100%;
     padding: 0 12px;
-    height: 95vh;
+    height: 85vh;
     justify-content: space-around;
   }
   .head-section .wrapper h1 {
@@ -368,6 +368,9 @@ footer .socials svg:hover path {
   .section3 .cheat {
     justify-content: space-between;
   }
+  .section3 .cheat article {
+    padding: 0 12px;
+  }
   .section3 .head {
     width: 100%;
   }
@@ -384,6 +387,7 @@ footer .socials svg:hover path {
   .section4 {
     height: auto;
     justify-content: space-between;
+    padding: 0 12px;
   }
   .section4 h1 {
     font-size: 28px;
@@ -420,6 +424,8 @@ footer .socials svg:hover path {
   .section5 {
     width: 100%;
     margin-bottom: 20vh;
+  }
+  .section5 article {
     padding: 0 12px;
   }
   .section5 h1 {
