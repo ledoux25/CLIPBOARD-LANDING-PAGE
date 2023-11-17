@@ -12,7 +12,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vh;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -364,7 +364,6 @@ footer .socials svg:hover path {
   }
   .section3 {
     height: auto;
-    padding: 0 12px;
   }
   .section3 .cheat {
     justify-content: space-between;
