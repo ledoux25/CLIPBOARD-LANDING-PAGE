@@ -318,6 +318,7 @@ footer{
 @media screen and (max-width : 380px) {
     body{
         background-color: white;
+        width: 100vw;
         overflow-x: hidden;
     }
     .head-section{
@@ -326,7 +327,7 @@ footer{
         .wrapper{
             width: 100%;
             padding: 0 12px;
-            height: 100vh;
+            height: 95vh;
             justify-content: space-around;
             h1{
                 font-size: $mobile-title!important;
@@ -435,6 +436,7 @@ footer{
     .section5{
         width: 100%;
         margin-bottom: 20vh;
+        padding: 0 12px;
         h1{
             font-size:$mobile-title;
         }
