@@ -15,6 +15,7 @@ $LightBlue: hsl(233, 100%, 69%);
 $Dark-Grayish-Blue: hsl(210, 10%, 33%);
 $Grayish-Blue: hsl(201, 11%, 66%);
 $title: 38px;
+$mobile-title : 28px;
 
 body{
     margin: 0;
@@ -192,10 +193,17 @@ button:hover{
     text-align: center;
     align-items:center;
     padding: 0 8%;
-    h1{
-        color: $Dark-Grayish-Blue;
-        font-size: $title;
+    .head{
+        h1{
+            color: $Dark-Grayish-Blue;
+            font-size: $title;
+        }
     }
+    article{
+        color: $Grayish-Blue!important;
+        font-size: 17px!important;
+    }
+
     .sub-section1{
         display: flex;
         justify-content: space-around;
@@ -287,6 +295,10 @@ footer{
             grid-column: 2/3;
             grid-row: 2;
         }
+        .item{
+            color: $Grayish-Blue;
+            font-weight:400;
+        }
         .item:hover{
             color: $Strong-Cyan;
             cursor: pointer;
@@ -299,6 +311,156 @@ footer{
         svg:hover path{
             fill: $Strong-Cyan;
             cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width : 380px) {
+    body{
+        background-color: white;
+        overflow-x: hidden;
+    }
+    .head-section{
+        background-image: url(../images/bg-header-mobile.png);
+        width: 100%!important;
+        .wrapper{
+            width: 100%;
+            padding: 0 12px;
+            height: 100vh;
+            justify-content: space-around;
+            h1{
+                font-size: $mobile-title!important;
+                margin: 10px 0;
+            }
+            article{
+                font-size: 14px;
+            }
+        }
+
+    }
+    .header-buttons{
+        font-size: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    button{
+        width: 80%;
+        margin: 10px 0;
+    }
+    .section2{
+        height: auto;
+        padding: 0 12px;
+        .head{
+            width: 100%;
+        }
+        h1{
+            font-size: 28px!important;
+            margin: 10px 0;
+        }
+        article{
+            font-size: 14px!important;
+        }
+        .sub-section{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 85%;
+                margin: 25px;
+                left: 0;
+            }
+            div{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .section3{
+        height: auto;
+        padding: 0 12px;
+        .cheat{
+            justify-content: space-between;
+        }
+        .head{
+            width: 100%;
+            h1{
+                font-size: $mobile-title;
+            }
+            article{
+                font-size: 13px;
+            }
+
+        }
+        img{
+            width: 80%;
+            margin-top: 35px;
+        }
+    }
+    .section4{
+        height: auto;
+        justify-content: space-between;
+        h1{
+            font-size: $mobile-title;
+        }
+        .sub-section1{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .card{
+                width: 105%;
+                padding: 0;
+                article{
+                    font-size: 13px;
+                    
+                }
+                span{
+                    font-size: 17px;
+                }
+                img{
+                    width: 15%;
+                    margin: 25px 0;
+                }
+            }
+        }
+        .sub-section2{
+            height: auto;
+            align-items: center;
+           flex-direction: column;
+           margin: 50px 0;
+           img{
+            width: 65%;
+            margin: 30px 0;
+           }
+        }
+    }
+    .section5{
+        width: 100%;
+        margin-bottom: 20vh;
+        h1{
+            font-size:$mobile-title;
+        }
+    }
+    footer{
+        height: auto;
+        flex-direction: column;
+        padding: 10vh 0;
+
+        .footer-content{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            img{
+                width: 60%;
+            }
+        }
+        .item{
+            display: block;
+            margin: 5vh 0;
+        }
+        .wrapper{
+            display: block;
+        }
+        .socials{
+            width: 80%;
         }
     }
 }
