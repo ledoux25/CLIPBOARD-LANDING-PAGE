@@ -306,7 +306,7 @@ footer .socials svg:hover path {
 @media screen and (max-width: 380px) {
   body {
     background-color: white;
-    width: 100vw;
+    width: 99%;
     overflow-x: hidden;
   }
   .head-section {
